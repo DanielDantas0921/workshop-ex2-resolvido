@@ -44,7 +44,7 @@ function enviarFormulario(ev) {
     }
 
 
-    if (historico.length > 5) {
+    if (historico.length == 5) {
         historico.unshift(String(v1 + " " + operacao + " " + v2 + " = " + resultado))
         historico.pop();
         historico.map((item) => {
