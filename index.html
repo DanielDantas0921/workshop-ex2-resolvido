@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2 - Workshop</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+
+    <h3>Calculadora</h3>
+    <form>
+        <div style="display: flex; flex-direction: column; gap: 5px;">
+            <label for="v1">Valor 1 :</label> <input type="number" id="v1" name="v1">
+        </div>
+        <select name="operacao" id="operacao" style="margin: 6px 0">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="*">*</option>
+        </select>
+        <div style="display: flex; flex-direction: column; gap: 5px;">
+            <label for="v2">Valor 2 :</label><input type="number" id="v2" name="v2">
+        </div><button class="btn" style="margin-top: 6px">Calcular</button>
+    </form>
+
+
+    <h3>Historico</h3>
+
+    <div id="historico"></div>
+
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>
